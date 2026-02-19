@@ -1,0 +1,12 @@
+### Configure a Mock Endpoint
+POST http://localhost:8080/admin/configure?path=/user/profile
+Content-Type: application/json
+
+{
+  "httpStatus": 200,
+  "payload": "{\"name\": \"Jack\", \"role\": \"Java Dev\"}",
+  "contentType": "application/json"
+}
+
+### Test the Mock
+GET http://localhost:8080/mock/user/profile
